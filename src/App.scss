@@ -1,0 +1,98 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: calc(10px + 2vmin);
+  overflow: none;
+  .App-layout {
+    background-image: url('./assets/bg.png');
+    background-position: 450%;
+    background-size: 84%;
+    background-repeat: no-repeat;
+    background-color: #360863;
+    color: white;
+    max-height: 85vh;
+    .App-content {
+      width: 90%;
+      display: flex;
+      max-height: 84vh;
+      min-height: 84vh;
+      margin: auto;
+      .App-content-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .App-content-info-container {
+          width: 125%;
+          .App-content-info-paragraph {
+            color: #f8f1ffb8;
+            display: block;
+          }
+          .App-content-info-mobile {
+            display: none;
+          }
+        }
+        .App-content-info-paragraph {
+          color: #f8f1ffb8;
+        }
+        .App-content-info-mobile {
+          display: none;
+        }
+      }
+    }
+  }
+  .App-footer {
+    margin: auto;
+    width: 80%;
+  }
+  .App-content-form {
+    margin-top: 5%;
+  }
+  .App-content-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    img {
+      width: calc(100% - 20px);
+      max-height: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .App {
+    background-position: -20%;
+    background-size: 360%;
+    .App-layout {
+      max-height: none;
+      margin-bottom: 5%;
+      .App-content {
+        margin-bottom: 5%;
+        flex-direction: column;
+        max-height: none;
+        .App-content-info {
+          margin-top: 5%;
+          .App-content-info-container {
+            max-width: 100%;
+            .App-content-info-paragraph {
+              display: none;
+            }
+            .App-content-info-mobile {
+              color: #f8f1ffb8;
+              display: block;
+            }
+          }
+        }
+        .App-content-center {
+          display: none;
+        }
+      }
+    }
+    .App-content-form {
+      margin-top: unset;
+    }
+  }
+}

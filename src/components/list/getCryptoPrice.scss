@@ -1,0 +1,36 @@
+.crypto-priceList-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+  overflow: auto;
+  overflow-x: hidden;
+  hr {
+    width: 100%;
+    border: 0.5px solid #f9f9f91c;
+  }
+  .crypto-priceList-container-item {
+    display: flex;
+    justify-content: space-between;
+    .crypto-priceList-container-item-col {
+      font-size: calc(4px + 2vmin);
+      width: 60%;
+      line-height: 0.8em;
+    }
+    .crypto-priceList-container-item-close {
+      vertical-align: middle;
+      color: rgba(248, 241, 255, 0.72) !important;
+      height: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .crypto-priceList-container {
+    margin-top: calc(100%/15);
+    margin-bottom: 6%;
+    .crypto-priceList-container-item {
+      margin-top: 10%;
+    }
+  }
+}
